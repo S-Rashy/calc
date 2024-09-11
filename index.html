@@ -15,24 +15,24 @@
 
 
         <div class="keys">
-            <div id="ac">AC</div>
-            <div id="del">Del</div>
-            <div id="slash" >/</div>
-            <div id="times">*</div>
-            <div id="seven">7</div>
-            <div id="eight" >8</div>
-            <div id="nine">9</div>
-            <div id="minus">-</div>
-            <div id="four">4</div>
-            <div id="five">5</div>
-            <div id="six">6</div>
-            <div id="plus" >+</div>
-            <div id="one">1</div>
-            <div id="two">2</div>
-            <div id="three">3</div>
-            <button id="equal" onclick="calculate('=')">=</button>
-            <div id="zero">0</div>
-            <div id="dot">.</div>
+            <div id="ac" onclick="clearDisplay()">AC</div>
+            <div id="del" onclick="deleteNum()">Del</div>
+            <div id="slash" onclick="addToDisplay('/')" >/</div>
+            <div id="times" onclick="addToDisplay('*')">*</div>
+            <div id="seven" onclick="addToDisplay('7')">7</div>
+            <div id="eight" onclick="addToDisplay('8')" >8</div>
+            <div id="nine" onclick="addToDisplay('9')">9</div>
+            <div id="minus" onclick="addToDisplay('-')">-</div>
+            <div id="four" onclick="addToDisplay('4')">4</div>
+            <div id="five" onclick="addToDisplay('5')">5</div>
+            <div id="six" onclick="addToDisplay('6')">6</div>
+            <div id="plus" onclick="addToDisplay('+')" >+</div>
+            <div id="one" onclick="addToDisplay('1')">1</div>
+            <div id="two" onclick="addToDisplay('2')">2</div>
+            <div id="three" onclick="addToDisplay('3')">3</div>
+            <div id="equal" onclick="equal()">=</div>
+            <div id="zero" onclick="addToDisplay('0')">0</div>
+            <div id="dot" onclick="addToDisplay('.')">.</div>
 
         </div>
     </div>
