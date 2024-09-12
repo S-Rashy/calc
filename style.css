@@ -3,21 +3,18 @@
 }
 .calc{
     border: 1px solid;
-    height: 480px;
-    width: 260px;
+    height: 520px;
+    width: 280px;
     margin: auto;
     border-radius: 10px;
     background: linear-gradient(to left, white, rgb(160, 215, 254), white, rgb(160, 215, 254) );
 }
 .top{
     border: 1px solid;
-    width: 240px;
+    width: 250px;
     height: 60px;
     margin: 30px auto;
     border-radius: 8px;
-    /* box-shadow: 3px 3px hsl(205, 92%, 69%); */
-    /* border: none; */
-    /* background-color: rgb(234, 232, 232); */
 
     p{
         font-size: 20px;
@@ -25,6 +22,31 @@
         color: hsl(205, 92%, 8%);
         text-align: right;
     }
+}
+.topkeys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px 0;
+}
+.topkeys div{
+    border: 1px solid;
+    color: hsl(205, 92%, 18%);
+    margin:  5px;
+    background-color: hsl(205, 94%, 39%);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 21px;
+    border: none;
+    box-shadow: 2px 2px hsl(205, 92%, 69%);
+    height: 30px;
+
+}
+.topkeys div:hover{
+    background-color: hsl(205, 94%, 24%);
+    color: white;
+
 }
 .keys{
     display: grid;
@@ -52,10 +74,6 @@
     align-items: center;
     justify-content: center;
 }
-/* #equal:hover{
-    background-color:hsl(205, 94%, 39%);
-    color: hsl(205, 92%, 8%);
-} */
 #zero{
     grid-column:  span 2;
     background-color: hsl(205, 92%, 88%);
@@ -63,28 +81,36 @@
 #zero:hover{
     background-color: hsl(205, 92%, 69%)
 }
-.keys div:nth-child(3), .keys div:nth-child(4),.keys div:nth-child(16), .keys div:nth-child(18){
-    background-color:hsl(205, 94%, 59%);;
+.keys div:nth-child(3), .keys div:nth-child(4),.keys div:nth-child(8),.keys div:nth-child(12),.keys div:nth-child(16), .keys div:nth-child(18){
+    background-color:hsl(205, 94%, 59%);
     color: white;
 }
 .keys div:hover{
-    background-color:hsl(205, 94%, 39%);;
+    background-color:hsl(205, 94%, 39%);
     color: white;
 }
 
 #equal:hover{
-    background-color:hsl(205, 94%, 29%);;
+    background-color:hsl(205, 94%, 29%);
     color: hsl(205, 92%, 8%);
 }
 #times:hover{
-    background-color:hsl(205, 94%, 29%);;
+    background-color:hsl(205, 94%, 29%);
     color: hsl(205, 92%, 8%);
 }
 #slash:hover{
-    background-color:hsl(205, 94%, 29%);;
+    background-color:hsl(205, 94%, 29%);
     color: hsl(205, 92%, 8%);
 }
 #dot:hover{
+    background-color:hsl(205, 94%, 29%);
+    color: hsl(205, 92%, 8%);
+}
+#plus:hover{
+    background-color:hsl(205, 94%, 29%);
+    color: hsl(205, 92%, 8%);
+}
+#minus:hover{
     background-color:hsl(205, 94%, 29%);;
     color: hsl(205, 92%, 8%);
 }

@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calc">
 
         <div class="top">
-            <p id="display"></p>
+            <p id="display" ></p>
         </div>
-
+        <div class="topkeys">
+            <div onclick="toPercent()"> % </div>
+            <div onclick="squareroot('')"> √x </div>
+            <div onclick="square('')">x²</div>
+        </div>
 
         <div class="keys">
             <div id="ac" onclick="clearDisplay()">AC</div>
             <div id="del" onclick="deleteNum()">Del</div>
-            <div id="slash" onclick="addToDisplay('/')" >/</div>
-            <div id="times" onclick="addToDisplay('*')">*</div>
+            <div id="slash" onclick="addToDisplay('/')" class="blue">÷</div>
+            <div id="times" onclick="addToDisplay('*')" class="blue">x</div>
             <div id="seven" onclick="addToDisplay('7')">7</div>
             <div id="eight" onclick="addToDisplay('8')" >8</div>
             <div id="nine" onclick="addToDisplay('9')">9</div>
-            <div id="minus" onclick="addToDisplay('-')">-</div>
+            <div id="minus" onclick="addToDisplay('-')" class="blue">-</div>
             <div id="four" onclick="addToDisplay('4')">4</div>
             <div id="five" onclick="addToDisplay('5')">5</div>
             <div id="six" onclick="addToDisplay('6')">6</div>
-            <div id="plus" onclick="addToDisplay('+')" >+</div>
+            <div id="plus" onclick="addToDisplay('+')" class="blue">+</div>
             <div id="one" onclick="addToDisplay('1')">1</div>
             <div id="two" onclick="addToDisplay('2')">2</div>
             <div id="three" onclick="addToDisplay('3')">3</div>
-            <div id="equal" onclick="equal()">=</div>
+            <div id="equal" onclick="equal()" class="blue">=</div>
             <div id="zero" onclick="addToDisplay('0')">0</div>
-            <div id="dot" onclick="addToDisplay('.')">.</div>
+            <div id="dot" onclick="addToDisplay('.')" class="blue">.</div>
 
         </div>
     </div>
