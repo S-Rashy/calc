@@ -11,19 +11,19 @@ function addToDisplay(btn) {
 }
 
 function equal() { 
-//     let lastnum = showtext.textContent.slice( 0,-1)
-//     // let firstnum = showtext.teazxtContent.charAt[0]
+    let lastnum = showtext.textContent.slice(-1)
+    let firstnum  = showtext.textContent.slice(0, 1)
 
-//   if ( lastnum === '+'|| lastnum == '-' || lastnum == '*' || lastnum == '/' ) {
-//     showtext.textContent = "Equation Invalid"
-// } 
-    // else if ( firstnum ==  '*' || firstnum == '/'  ) {
-    //     showtext.textContent = "Equation Invalid"
-    // }
-    
-    showtext.textContent = eval(showtext.textContent);       
-    
+  if ( lastnum === '+'|| lastnum == '-' || lastnum == '*' || lastnum == '/' ) {
+    showtext.textContent = "Equation Invalid"
+} 
+    else if ( firstnum ==  '*' || firstnum == '/'  ) {
+        showtext.textContent = "Equation Invalid"
+    }
+   
+    showtext.textContent = eval(showtext.textContent);   
 }
+showtext.textContent = " "
 
 function clearDisplay() { 
     showtext.textContent = ' ';    
